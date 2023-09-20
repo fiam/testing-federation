@@ -72,7 +72,7 @@ jobs:
           BENCH_VUS: ${{ inputs.vu }}
           BENCH_OVER_TIME: ${{ inputs.time }}
           MEM_LIMIT: ${{ inputs.memoryLimit }}
-          CPU_LIMIT: ${{ inputs.cpuLimit }}
+          CPU_LIMIT: 2
 
       - uses: actions/upload-artifact@v3
         if: always()
